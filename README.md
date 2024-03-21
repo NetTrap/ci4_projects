@@ -12,6 +12,4 @@
 
 
 - pertemuan4 View Navbar
-
-
 ![img3](screen/01.jpg)
