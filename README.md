@@ -14,3 +14,10 @@
 
 - Hasil Tantangan contact
 ![img4](screen/04.jpg)
+
+- Komik Model
+![img5](screen/05.jpg)
+
+- Detail
+![img6](screen/06.jpg)
+
