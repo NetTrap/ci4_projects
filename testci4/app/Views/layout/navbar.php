@@ -9,6 +9,7 @@
         <a class="nav-link active" aria-current="page" href="<?= base_url('pages'); ?>">Home</a>
         <a class="nav-link" href="<?= base_url('pages/about'); ?>">About Us</a>
         <a class="nav-link" href="<?= base_url('pages/contact/'); ?>">Contacts</a>
+        <a class="nav-link" href="<?= base_url('komik/'); ?>">Komik</a>
         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
       </div>
     </div>

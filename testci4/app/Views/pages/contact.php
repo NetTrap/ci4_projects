@@ -8,9 +8,9 @@
 
             <?php foreach($alamat as $a): ?>
                 <ul>
-                    <li><?= $a['tipe']; ?></li>
-                    <li><?= $a['alamat']; ?></li>
-                    <li><?= $a['kota']; ?></li>
+                    <li><?= esc($a['tipe']); ?></li>
+                    <li><?= esc($a['alamat']); ?></li>
+                    <li><?= esc($a['kota']); ?></li>
                 </ul>
             <?php endforeach; ?>
 
