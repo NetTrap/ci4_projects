@@ -24,4 +24,10 @@
 ## insert_data
 
 - Muncul Pesan
-![img7](screen/07.png)
+![img7](screen/07.PNG)
+
+- Detail
+![img8](screen/08.PNG)
+
+- Database Otomatis Tertambah
+![img9](sreen/img09.PNG)
