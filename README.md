@@ -21,3 +21,7 @@
 - Detail
 ![img6](screen/06.jpg)
 
+## insert_data
+
+- Muncul Pesan
+![img7](screen/07.png)
