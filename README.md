@@ -31,3 +31,15 @@
 
 - Database Otomatis Tertambah
 ![img9](screen/09.PNG)
+
+## Validasi Data
+
+- Jika data sudah ada
+![img10](screen/10.PNG)
+
+- Jika data kosong
+![img11](screen/11.PNG)
+
+## Delete Data
+- Jika data terhapus berhasil
+![img12](screen/12.PNG)
