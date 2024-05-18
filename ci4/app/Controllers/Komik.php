@@ -53,15 +53,37 @@ class Komik extends BaseController
 
   public function create()
   {
+    // session();
     $data = [
-      'title' => 'Form Tambah Data Buku'
+      'title' => 'Form Tambah Data Buku',
+      'validation' => session()->getFlashdata('validation') ?? \Config\Services::validation()
     ];
 
-    return view('komik/create');
+    return view('komik/create', $data);
   }
 
   public function save()
   {
+
+    // validasi input
+    if (
+      !$this->validate([
+        'judul' => [
+          'rules' => 'required|is_unique[komik.judul]',
+          'errors' => [
+            'required' => '{field} buku harus diisi.',
+            'is_unique' => '{field} buku sudah ada'
+          ]
+        ]
+      ])
+    ) {
+      session()->setFlashdata('validation', \Config\Services::validation());
+      return redirect()->to('/komik/create')->withInput();
+      // $validation = \Config\Services::validation();
+      // return redirect()->to('/komik/create')->withInput()->with('validation', $validation);
+    }
+
+
     // dd($this->request->getVar());
     $slug = url_title($this->request->getVar('judul'), '-', true);
     $this->komikModel->save([
@@ -76,5 +98,12 @@ class Komik extends BaseController
 
     return redirect()->to('/komik');
 
+  }
+
+  public function delete($id)
+  {
+    $this->komikModel->delete($id);
+    session()->setFlashdata('pesan', 'Data berhasil dihapus');
+    return redirect()->to('/komik');
   }
 }
